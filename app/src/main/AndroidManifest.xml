@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myapp">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/namaskara"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/namaskara"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApp">
+<!--        <activity android:name=".HomeActivity"></activity>-->
+        <activity android:name=".MainActivity"></activity>
+        <activity
+            android:name=".DirectionsActivity"
+            android:label="Directions"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".DaysActivity"
+            android:label="Days"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".ColorsActivity"
+            android:label="Colors"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".PhrasesActivity"
+            android:label="Phrases"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".FamilyActivity"
+            android:label="Family Members"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".NumbersActivity"
+            android:label="Numbers"
+            android:parentActivityName=".MainActivity" />
+<!--        <activity android:name=".MainActivity">-->
+        <activity android:name=".HomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
